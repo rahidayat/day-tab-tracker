@@ -18,8 +18,12 @@
 
     <v-spacer/>
 
+
     <v-toolbar-items>
       <!-- <router-link to="register"> -->
+        <v-btn flat dark @click="navigateTo({name: 'login'})">
+          Log in
+        </v-btn>
         <v-btn flat dark @click="navigateTo({name: 'register'})">
           Sign Up
         </v-btn>
