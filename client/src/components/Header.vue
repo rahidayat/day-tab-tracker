@@ -21,10 +21,10 @@
 
     <v-toolbar-items>
       <!-- <router-link to="register"> -->
-        <v-btn flat dark @click="navigateTo({name: 'login'})">
+        <v-btn v-if="!$store.state.isUserLoggedIn" flat dark @click="navigateTo({name: 'login'})">
           Log in
         </v-btn>
-        <v-btn flat dark @click="navigateTo({name: 'register'})">
+        <v-btn v-if="!$store.state.isUserLoggedIn" flat dark @click="navigateTo({name: 'register'})">
           Sign Up
         </v-btn>
       <!-- </router-link> -->
