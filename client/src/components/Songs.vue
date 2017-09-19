@@ -1,7 +1,9 @@
 <template>
   <v-layout column>
     <v-flex xs6 offset-xs3>
-      <Panel />
+      <Panel title="Songs">
+
+      </Panel>
     </v-flex>
   </v-layout>
 </template>
