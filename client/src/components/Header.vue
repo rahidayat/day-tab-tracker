@@ -10,7 +10,7 @@
 
     <v-toolbar-items>
       <!-- <router-link to=""> -->
-        <v-btn flat dark>
+        <v-btn flat dark @click="navigateTo({name: 'songs'})">
           Browse
         </v-btn>
       <!-- </router-link> -->
